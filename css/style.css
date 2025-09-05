@@ -306,7 +306,6 @@ input:focus {
         height: auto;
         padding: 20px 0;
         background-color: rgba(0, 0, 0, 0.9);
-        animation: fadeInDown 0.5s ease-in-out;
     }
 
     .slider.open-menu .head {
@@ -317,6 +316,7 @@ input:focus {
         padding: 20px 0;
         justify-content: center;
         position: relative;
+        
     }
 
     .items nav {
@@ -342,7 +342,7 @@ input:focus {
         align-items: center;
         background-color: #0d0d0d;
         position: fixed;
-        top: 0;
+        top: 4px;
         left: 0;
         z-index: 1002;
         padding: 0 20px;
@@ -358,7 +358,9 @@ input:focus {
         top: auto;
         left: auto;
         transform: none;
+        color: #fff;
     }
+   
 
     .secondSlide .img,
     .secondSlide .footer-social {
@@ -381,13 +383,3 @@ input:focus {
     }
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
